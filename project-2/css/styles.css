@@ -1,0 +1,22 @@
+html {
+  --gray: #444;
+  --gray-dark: #333;
+  --gray-light: #f2f2f2;
+}
+
+body {
+  font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
+}
+
+.grid > * {
+  grid-column: main;
+}
